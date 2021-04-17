@@ -1,0 +1,18 @@
+.cellsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+@media (max-width: 500px) {
+    .cellsWrapper {
+        width: 340px;
+        gap: 5px;
+    }
+}
+@media (min-width: 501px) {
+    .cellsWrapper {
+        width: 410px;
+        gap: 30px;
+    }
+}

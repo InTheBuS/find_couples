@@ -1,0 +1,33 @@
+.cell {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    text-align: center;
+    transition: transform .5s, opacity .2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    color:white;
+    opacity: 1;
+}
+.is__flipped {
+    transform: rotateY(180deg);
+}
+.cell__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cell__font {
+    background-color: black;
+}
+.cell__back {
+    transform: rotateY(180deg);
+}
+.opacity {
+    opacity: 0;
+    cursor: auto;
+}
